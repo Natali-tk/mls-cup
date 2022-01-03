@@ -1,0 +1,29 @@
+{
+  "name": "mls-cup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://natali-tk.github.io/mls-cup/",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /mls-cup/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Natali-tk/mls-cup.git"
+  },
+  "author": "Nataliia Totska <natasha.totska@yahoo.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Natali-tk/mls-cup/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3",
+    "gsap": "^3.9.1",
+    "parcel-bundler": "^1.12.5",
+    "posthtml-include": "^1.4.3",
+    "sass": "^1.45.0"
+  }
+}

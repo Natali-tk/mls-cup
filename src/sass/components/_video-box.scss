@@ -1,0 +1,62 @@
+.video-overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $backdrop-color;
+  opacity: 0;
+  pointer-events: none;
+  overflow-y: scroll;
+
+  &.video-is-open {
+    opacity: 1;
+    pointer-events: initial;
+  }
+}
+
+.video-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  height: auto;
+  max-height: 100%;
+}
+
+.video-play-btn {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(+50%, -50%);
+  background: none;
+  border: none;
+  opacity: 1;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__img {
+    width: 8vw;
+  }
+}
+.video-play-btn__img.is-hidden {
+  display: none;
+}
+
+.video-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(+50%, -50%);
+  background: none;
+  border: none;
+  &:hover {
+    cursor: pointer;
+  }
+  &__img {
+    width: 6vw;
+  }
+}

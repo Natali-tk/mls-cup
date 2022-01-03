@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <title>MLS CUP</title>
+  </head>
+  <body class="page">
+    <main class="animation">
+      <button class="btn-close" type="button">
+        <img
+          class="btn-close__img"
+          src="./images/close-btn.png"
+          alt="Close Button"
+        />
+      </button>
+
+      <!-- Section Cup-->
+      <section class="cup-animation">
+        <div class="cup" id="cup">
+          <img class="cup-img" src="./images/cup.png" alt="Cup" width="100%" />
+        </div>
+        <div class="confetti" id="confetti">
+          <img
+            class="confetti-img"
+            src="./images/confetti.png"
+            alt="Confetti"
+          />
+        </div>
+      </section>
+
+      <!-- Section Poster-->
+      <section class="poster-animation">
+        <div class="content">
+          <h2 class="poster-title">
+            <span>Portland Timbers</span>
+            <span>vs</span>
+            <span>FC Dallas</span>
+          </h2>
+          <div class="poster-info">
+            <p class="poster-info__date">
+              December 6<sup class="poster-info__date-sup">th</sup>
+            </p>
+            <img
+              class="poster-info__strip"
+              src="./images/strip.png"
+              alt="strip"
+            />
+            <p class="poster-info__time">3pm et</p>
+          </div>
+
+          <div class="tune-in">
+            <p class="tune-descr">Live on</p>
+            <img
+              class="tune-in__img"
+              src="./images/tune-in-fragment-1.png"
+              alt="FS1"
+            />
+            <p class="tune-in__plus">+</p>
+            <img
+              class="tune-in__img"
+              src="./images/tune-in-fragment-2.png"
+              alt="UMAS"
+              width="110"
+              height="40"
+            />
+          </div>
+          <img class="poster__emblem" src="./images/emblem.png" alt="emblem" />
+          <button id="video-btn" class="video-btn">
+            <img
+              class="video-btn__icon"
+              src="./images/video-btn.png"
+              alt="video button"
+            />
+            <p class="video-btn__text">watch tv spot</p>
+          </button>
+        </div>
+      </section>
+
+      <!-- Section Fans -->
+      <section class="fans-animation">
+        <div id="logos-club-left" class="fans__bg fans__bg--left">
+          <img
+            id="logo-portland"
+            class="logo logo--portland"
+            src="./images/logo-portland.png"
+            alt="logo Portland"
+          />
+        </div>
+
+        <div id="logos-club-right" class="fans__bg fans__bg--right">
+          <img
+            id="logo-dallas"
+            class="logo logo--dallas"
+            src="./images/logo-dallas.png"
+            alt="logo Dallas"
+          />
+        </div>
+        <b class="slogan-list">
+          <span class="one">One</span>
+          <span class="game">game</span>
+          <span class="glory">to glory</span>
+        </b>
+      </section>
+
+      <!-- Video Box-->
+      <div class="video-overlay">
+        <div class="video-box">
+          <video id="video" class="video" poster="./images/video-post.webp">
+            <source src="./video/video.mp4" type="video/mp4" />
+          </video>
+          <button class="video-play-btn">
+            <img
+              class="video-play-btn__img"
+              src="./images/video-play.png"
+              alt="video play button"
+            />
+          </button>
+          <button class="video-close-btn">
+            <img
+              class="video-close-btn__img"
+              src="./images/video-close.png"
+              alt="video close button"
+            />
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

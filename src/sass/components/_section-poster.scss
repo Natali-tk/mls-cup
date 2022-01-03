@@ -1,0 +1,113 @@
+.poster-animation {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: radial-gradient(
+      circle at 63.2vw center,
+      transparent,
+      $dark-bg-color 50vw
+    ),
+    url('../images/poster.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  overflow: hidden;
+
+  .poster-is-hidden & {
+    display: none;
+  }
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.8vw;
+  padding-bottom: 1.8vw;
+  padding-left: 1.6vw;
+}
+
+.poster-title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 36px;
+  font-weight: 800;
+  font-size: 4.5vw;
+  text-transform: uppercase;
+  text-align: initial;
+
+  & span {
+    padding-left: 6px;
+    padding-right: 64px;
+    margin-right: auto;
+    margin-bottom: 12px;
+    background-color: $bg-color;
+  }
+}
+.poster-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+}
+.poster-info__date-sup {
+  font-size: 2vw;
+  vertical-align: super;
+}
+.poster-info__strip {
+  display: inline-block;
+  width: 0.5vw;
+  height: 2vw;
+  margin-right: 1vw;
+  margin-left: 1vw;
+}
+
+.poster-info__date {
+  font-size: 3vw;
+  font-weight: 500;
+  color: $white-text-color;
+}
+
+.poster-info__time {
+  font-weight: 800;
+  font-size: 3vw;
+  text-transform: uppercase;
+  color: $white-text-color;
+}
+
+.tune-in {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 26px;
+
+  & .tune-descr {
+    display: block;
+    font-size: 3.5vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $accent-bg-color;
+    margin-right: 10px;
+  }
+}
+.tune-in__plus {
+  font-size: 3vw;
+  font-weight: 700;
+  color: $accent-bg-color;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.tune-in__img {
+  width: 8vw;
+  height: 4vw;
+}
+.poster__emblem {
+  width: 28vw;
+  margin-top: auto;
+}
