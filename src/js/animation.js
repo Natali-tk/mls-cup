@@ -102,13 +102,15 @@ t1.to(one, {
 gsap.to(logosLeft, {
   ease: Power1.easeOut,
   duration: 1,
-  x: -1200,
+  x: -1500,
   delay: 14,
 });
 
 gsap.to(logosRight, {
   ease: Power1.easeOut,
   duration: 1,
-  x: 1200,
+  x: 1500,
   delay: 14,
 });
+
+
